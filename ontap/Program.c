@@ -28,7 +28,7 @@ int main()
 			TinhTong();
 			break;
 		case 3:
-			ThongTinThuCung();
+			ThongTinCuaHang();
 			break;
 		case 0:
 			return 0;
