@@ -11,9 +11,10 @@ void ThongTinCuaHang()
 
 		char tc[100][50];
 		float cannang[100], sum = 0;
-
+		int soluong = 0;
 		
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) 
+		{
 			printf("\nThu cung %d:\n", i + 1);
 			printf("Ten thu cung: ");
 			scanf(" %[^\n]", tc[i]);
@@ -22,7 +23,15 @@ void ThongTinCuaHang()
 			sum += cannang[i];
 		}
 		float tb = sum / n;
+		for (int i = 0; i < n; i++)
+		{
+			if (cannang[i] < tb)
+			{
+				soluong++;
+			}
+		}
 		printf("Can Nang Trung Binh: %2.f\n", tb);
+		printf("So Thu Cung Co Can Nang Duoi Trung Binh: %d\n", soluong);
 		printf("Ban co muon tiep tuc khong? (1: Co, 0: Khong):\n ");
 		scanf("%d", &tieptuc11);
 	} while (tieptuc11 == 1);
