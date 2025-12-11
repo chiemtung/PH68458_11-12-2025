@@ -1,7 +1,7 @@
 #pragma once
 void ThongTinCuaHang()
 {
-	int tieptuc8;
+	int tieptuc11;
 	do
 	{
 		system("cls");
@@ -12,14 +12,16 @@ void ThongTinCuaHang()
 		char tc[100][50];
 		float cannang[100];
 
-		// Input thong tin sinh vien
+		
 		for (int i = 0; i < n; i++) {
-			printf("\nSinh vien %d:\n", i + 1);
-			printf("Ho ten: ");
+			printf("\nThu cung %d:\n", i + 1);
+			printf("Ten thu cung: ");
 			scanf(" %[^\n]", tc[i]);
-			printf("Diem: ");
+			printf("Can nang: ");
 			scanf("%f", &cannang[i]);
 		}
-	} while (tieptuc8 == 1);
+		printf("Ban co muon tiep tuc khong? (1: Co, 0: Khong):\n ");
+		scanf("%d", &tieptuc11);
+	} while (tieptuc11 == 1);
 	system("cls");
 }

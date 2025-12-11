@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "ThongTinThuCung.h"
 #include "TinhTong.h"
+#include "ThongTinCuaHang.h"
 
 int main()
 {
@@ -27,7 +28,7 @@ int main()
 			TinhTong();
 			break;
 		case 3:
-			tinh_tien_karaoke();
+			ThongTinThuCung();
 			break;
 		case 0:
 			return 0;

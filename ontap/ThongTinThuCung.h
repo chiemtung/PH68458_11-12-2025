@@ -5,9 +5,10 @@
 
 void ThongTinThuCung()
 {
-    int tieptuc10;
+    int tieptuc1;
     do
     { 
+        system("cls");
          struct ThuCung {
         char ma[20];
         char ten[50];
@@ -46,8 +47,9 @@ void ThongTinThuCung()
             printf("Nam sinh : %d\n", tc[i].namSinh);
             printf("Tuoi     : %d tuoi\n", tuoi);
         }
-
-    } while (tieptuc10 == 1);
+        printf("Ban co muon tiep tuc khong? (1: Co, 0: Khong):\n ");
+        scanf("%d", &tieptuc1);
+    } while (tieptuc1 == 1);
     system("cls");
-    }
+   
 }
